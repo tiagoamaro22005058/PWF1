@@ -1,73 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>\
+<head>
     <title>Edinburgh</title>
     <meta charset="utf-8">
     <meta name="author" content="Tiago Amaro">
     <meta name="description" content="Website sobre Edinburgh">
     <meta name="keywords" content="Escócia">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <h1>Edinburgh</h1>
-    <img src="images/edinburgh.jpg" alt="edinburgh">
-    <br>
-    <p>
-        <b><a href="index.html">Introdução</a>
-            <a href="local.html">Localização</a>
-            <a href="multimedia.html">Multimedia</a>
-            <a href="info.html">Informação</a></b>
-    </p>
-    <h2>Multimedia</h2>
-    <p><a href="#fotografias">Fotografias </a><a href="#video">video </a><a href="#Poema">Poema</a></p>
-    <h3 id="video">Video</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SRNyfBRhq0A" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
-    <h3 id="fotografias">Fotografias</h3>
-    <p>O castelo de Edinburgh, localizado no topo de uma colina, é um ponto turístico famoso na cidade. A colina <br>
-        Arthur's Seat oferece vistas deslumbrantes, enquanto as ruas da cidade possuem lojas e cafés charmosos. <br>
-        Edinburgh é uma cidade que oferece uma festa visual para aqueles que amam arquitetura histórica e paisagens
-        cênicas.</p>
-    <a href="images/Castle_grande.jpg" target="foto" ><img src="images/Castle_pequena.jpg" alt="Castle" ></a>
-    <a href="images/edinburghHill_grande.jpg" target="foto"><img src="images/edinburghHill_pequena.jpg" alt="Hill" ></a>
-    <a href="images/Street_Grande.jpg" target="foto"><img src="images/Street_pequena.jpg" alt="Street"></a>
-    <iframe style="margin-right: 40%;" name="foto" src="images/Castle_grande.jpg" width="800" height="600" frameBorder="0"></iframe>
+    <header>
+        <h1>Edinburgh</h1>
+        <figure>
+            <div><img src="images/edinburgh.jpg" alt="edinburgh" class="hover-image"></div>
+        </figure>
+        <br>
+    </header>
+    <nav>
+        <p>
+            <b><a href="index.html">🏡Introdução</a>
+                <a href="local.html">🗺 Localização</a>
+                <a href="multimedia.html">📷 Multimedia</a>
+                <a href="info.html"> ⓘ Informação</a>
+                <a href="quizz.html" class="link">Quizz</a>
+                <a href="html5-css.html"> 👨‍💻 HTML/CSS</a></b>
+        </p>
+    </nav>
+    <main>
+        <h2>Multimedia</h2>
+        <p><a href="#fotografias">Fotografias </a><a href="#video">Video </a><a href="#Poema">Poema</a></p>
+        <section>
+            <h3 id="video">Video</h3>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SRNyfBRhq0A"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </figure>
+        </section>
+        <section>
+            <h3 id="fotografias">Fotografias</h3>
+            <p>O castelo de Edinburgh, localizado no topo de uma colina, é um ponto turístico famoso na cidade. A colina
+                <br>
+                Arthur's Seat oferece vistas deslumbrantes, enquanto as ruas da cidade possuem lojas e cafés charmosos.
+                <br>
+                Edinburgh é uma cidade que oferece uma festa visual para aqueles que amam arquitetura histórica e
+                paisagens
+                cênicas.
+            </p>
+            <figure>
+                <a href="images/Castle_grande.jpg" target="foto"><img src="images/Castle_pequena.jpg" alt="Castle"></a>
+                <a href="images/edinburghHill_grande.jpg" target="foto"><img src="images/edinburghHill_pequena.jpg"
+                        alt="Hill"></a>
+                <a href="images/Street_Grande.jpg" target="foto"><img src="images/Street_pequena.jpg" alt="Street"></a>
 
-
-    <h3 id="Poema">Poema</h3>
-    <p style="font-size: 20px;">Edinburgh, Cidade Mágica</p>
-    <p style="font-size: 17px;">by: ChatGPT</p>
-    <P><em>
-            Edimburgo, cidade de pedra <br>
-            Onde a história é tão rica e bela<br>
-            O vento sopra forte e frio<br>
-            E as colinas verdes trazem alívio<br>
-            <br>
-            Suas ruas estreitas e sinuosas<br>
-            De edifícios imponentes são cercadas<br>
-            Castelos, catedrais e palácios<br>
-            Testemunhas de batalhas e reinados<br>
-            <br>
-            Ao longo do Royal Mile, a vida vibra<br>
-            Com lojas, pubs e restaurantes de primeira<br>
-            E o som dos músicos de rua<br>
-            Enche o ar com suas melodias cruas<br>
-            <br>
-            Mas além da agitação da cidade<br>
-            Há a calma dos parques e jardins de verdade<br>
-            Onde se pode contemplar a paisagem<br>
-            E sentir a paz que a natureza traz à mão<br>
-            <br>
-            Edimburgo, cidade mágica<br>
-            Que mistura passado e presente de forma única<br>
-            Onde cultura e arte florescem com magia<br>
-            E a cada esquina há uma nova surpresa em harmonia.<br>
-        </em></P>
-
+                <iframe style="margin-right: 40%;" name="foto" src="images/Castle_grande.jpg" width="800" height="600"
+                    frameBorder="0"></iframe>
+            </figure>
+        </section>
+        <section>
+            <div class="poema">
+                <h3 id="Poema">Poema</h3>
+                <p style="font-size: 20px;">Edinburgh, Cidade Mágica</p>
+                <p style="font-size: 17px;">by: ChatGPT</p>
+                <P><em>
+                        Edimburgo, cidade de pedra <br>
+                        Onde a história é tão rica e bela<br>
+                        O vento sopra forte e frio<br>
+                        E as colinas verdes trazem alívio<br>
+                        <br>
+                        Suas ruas estreitas e sinuosas<br>
+                        De edifícios imponentes são cercadas<br>
+                        Castelos, catedrais e palácios<br>
+                        Testemunhas de batalhas e reinados<br>
+                        <br>
+                        Ao longo do Royal Mile, a vida vibra<br>
+                        Com lojas, pubs e restaurantes de primeira<br>
+                        E o som dos músicos de rua<br>
+                        Enche o ar com suas melodias cruas<br>
+                        <br>
+                        Mas além da agitação da cidade<br>
+                        Há a calma dos parques e jardins de verdade<br>
+                        Onde se pode contemplar a paisagem<br>
+                        E sentir a paz que a natureza traz à mão<br>
+                        <br>
+                        Edimburgo, cidade mágica<br>
+                        Que mistura passado e presente de forma única<br>
+                        Onde cultura e arte florescem com magia<br>
+                        E a cada esquina há uma nova surpresa em harmonia.<br>
+                    </em></P>
+            </div>
+        </section>
+    </main>
+    <footer>Tiago Amaro 22005058 ULHT 2023</footer>
 </body>
 
 </html>

@@ -1,0 +1,94 @@
+body {
+    background-color: #0065BF;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+a,
+td,
+p {
+    color: #ffffff;
+}
+
+footer {
+    color: #000000;
+}
+
+.branco {
+    color: #ffffff;
+}
+
+#unico {
+    color: #ffffff;
+}
+
+[target="_blank"] {
+    color: #ffffff;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+}
+
+.link {
+    position: relative;
+}
+
+.link::before {
+    content: "🤓";
+}
+
+.fieldset-1 {
+    background-color: rgb(60, 132, 232);
+    border-color: #ffffff;
+}
+
+.fieldset-2 {
+    background-color: rgb(42, 97, 160);
+    border-color: #ffffff;
+}
+
+.fieldset-3 {
+    background-color: rgb(18, 83, 173);
+    border-color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+    font-size: 120%;
+}
+
+a:visited {
+    color: #ffffff
+}
+
+a:link {
+    color: #ffffff;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+a:invalid {
+    color: gray;
+}
+
+.poema {
+    background-color: rgb(42, 97, 160);
+}
+
+tr:nth-child(even) {
+    background-color: #3890d2;
+}
+
+tr:nth-child(odd) {
+    background-color: #0067e5;
+}

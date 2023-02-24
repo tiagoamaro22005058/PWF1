@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+
+
+
+
+
+<head>
+    <title>Edinburgh</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tiago Amaro">
+    <meta name="description" content="Website sobre Edinburgh">
+    <meta name="keywords" content="Escócia">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Edinburgh</h1>
+        <figure>
+            <div><img src="images/edinburgh.jpg" alt="edinburgh" class="hover-image"></div>
+        </figure>
+        <br>
+    </header>
+    <nav>
+        <p>
+            <b><a href="index.html">🏡Introdução</a>
+                <a href="local.html">🗺 Localização</a>
+                <a href="multimedia.html">📷 Multimedia</a>
+                <a href="info.html"> ⓘ Informação</a>
+                <a href="quizz.html" class="link">Quizz</a>
+                <a href="html5-css.html"> 👨‍💻 HTML/CSS</a></b>
+        </p>
+    </nav>
+    <main>
+        <h3>Quizz</h3>
+        <p>Bem-vindo ao nosso quiz sobre a cidade de Edinburgh, capital da Escócia. <br>
+            Então, prepare-se para testar seus conhecimentos e descobrir se você realmente conhece Edinburgh!
+        </p>
+        <form method="POST" action="mailto: tiago.a8701@gmail.com" enctype="multipart/form-data">
+            <fieldset class="fieldset-1">
+                <legend class="branco">Mostre que conhece Edinburgh</legend>
+                <fieldset class="fieldset-2">
+                    <legend class="branco">info</legend>
+                    <div>
+                        <label for="name" class="branco">Nome:&nbsp;&nbsp;</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="apelido" class="branco">apelido:</label>
+                        <input type="text" id="apelido">
+                    </div>
+                    <div>
+                        <label for="email" class="branco">email:&nbsp;&nbsp;&nbsp;</label>
+                        <input type="email" id="email">
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-3">
+                    <legend class="branco">Perguntas</legend>
+
+                    <h2>Questão 1:</h2>
+                    <p>Qual é a capital da Escócia?</p>
+                    <input type="text" name="q1" placeholder="Sua resposta" size="30" maxlength="50" autocomplete="on"
+                        autofocus required pattern="[Ee]dimburgo">
+
+                    <h2>Questão 2:</h2>
+                    <p>Qual é o nome do castelo mais famoso de Edimburgo?</p>
+                    <input type="radio" name="q2" value="a" id="q2a" required>
+                    <label for="q2a" class="branco">a) Castelo de Stirling</label><br>
+                    <input type="radio" name="q2" value="b" id="q2b">
+                    <label for="q2b" class="branco">b) Castelo de Edimburgo</label><br>
+                    <input type="radio" name="q2" value="c" id="q2c">
+                    <label for="q2c" class="branco">c) Castelo de Urquhart</label><br>
+
+                    <h2>Questão 3:</h2>
+                    <p>Quais são as cores da bandeira da Escócia?</p>
+                    <input type="checkbox" name="q3a" value="azul" id="q3a">
+                    <label for="q3a" class="branco">Azul</label><br>
+                    <input type="checkbox" name="q3b" value="branco" id="q3b">
+                    <label for="q3b" class="branco">Branco</label><br>
+                    <input type="checkbox" name="q3c" value="verde" id="q3c">
+                    <label for="q3c" class="branco">Verde</label><br>
+                    <input type="checkbox" name="q3d" value="amarelo" id="q3d">
+                    <label for="q3d" class="branco">Amarelo</label><br>
+
+                    <h2>Questão 4:</h2>
+                    <p>Em que dia do mês de agosto começa o Festival de Edimburgo?</p>
+                    <input type="date" name="q4" placeholder="Sua resposta" min="2023-01-01" max="2023-12-31" required>
+
+                    <h2>Questão 5:</h2>
+                    <p>Qual é o nome da rua mais famosa de Edimburgo?</p>
+                    <img src="images/RoyalMile.jpg" width="120">
+                    <input type="text" name="q5" placeholder="Sua resposta" size="30" maxlength="50" autocomplete="on"
+                        required pattern="[Ee]dimburgo">
+
+                    <h2>Questão 6:</h2>
+                    <p>Qual é a cor predominante na bandeira da Escócia?</p>
+                    <input type="color" name="q6" value="#0072C6" required>
+
+                    <h2>Questão 7:</h2>
+                    <p>Quantos habitantes tem a cidade de Edimburgo?</p>
+                    <input type="number" name="q7" placeholder="Sua resposta" min="1" max="10000000" autocomplete="off"
+                        required>
+
+                    <h2>Questão 8:</h2>
+                    <p>Em que ano foi fundada a Universidade de Edimburgo?</p>
+                    <input type="range" name="q8" min="1583" max="2023" value="1583" required>
+                    <p><span id="range-value">1583</span></p>
+
+                    <h2>Questão 9:</h2>
+                    <p>Em que século foi construído o Castelo de Edimburgo?</p>
+                    <select name="q9" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="12">Século XII</option>
+                        <option value="13">Século XIII</option>
+                        <option value="14">Século XIV</option>
+                        <option value="15">Século XV</option>
+                    </select>
+
+                    <h2>Questão 10:</h2>
+                    <p>Qual é a maior cidade da Escócia?</p>
+                    <input list="cidades" name="q10" placeholder="Digite ou selecione a cidade" required>
+                    <datalist id="cidades">
+                        <option value="Edimburgo">
+                        <option value="Glasgow">
+                        <option value="Aberdeen">
+                        <option value="Dundee">
+                        <option value="Inverness">
+                    </datalist>
+
+                    <br><br><br>
+                    <label for="opiniao" class="branco">Diga-nos o que achou do quizz</label><br>
+                    <textarea id="opiniao" name="opiniao" rows="5" cols="33">
+                        Escreva aqui
+                    </textarea><br>
+
+
+                    <input type="submit" value="Enviar">
+                </fieldset>
+
+            </fieldset>
+        </form>
+
+        <script>
+            // Exibe o valor do input range
+            const range = document.querySelector('input[type="range"]');
+            const rangeValue = document.getElementById('range-value');
+            range.addEventListener('input', () => {
+                rangeValue.textContent = range.value;
+            });
+        </script>
+
+    </main>
+    <footer>Tiago Amaro 22005058 ULHT 2023</footer>
+</body>
